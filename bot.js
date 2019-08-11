@@ -32,7 +32,7 @@ client.on('message', message => {
       
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'zajel')) {
+        if(message.content.startsWith(prefix + 'كريدت')) {
             message.channel.send(''+x);
                 message.delete(999)
         }
