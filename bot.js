@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
-var prefix = "-";
+var prefix = "!";
 
 
 client.on('message', message => {
-    if (message.content === 'بوم') {
-          let count = 1;
-          let ecount = 1;
-          for(let x = 1; x < 99999; x++) {
-            message.channel.send(`ٍٍٍ`)
+    if (message.content === '!spam') {
+          let count = 0;
+          let ecount = 0;
+          for(let x = 0; x < 90000; x++) {
+            message.channel.send(`سباام يولد يلعن اومم الفله ${x}`)
               .then(m => {
                 count++;
               })
@@ -17,6 +17,6 @@ client.on('message', message => {
             }
           }
     });
-
+    
 
 client.login(process.env.BOT_TOKEN);
